@@ -37,6 +37,7 @@
 (require 'async)
 (require 'seq)
 (require 'compile)
+(require 'project)
 
 ;;; Customization
 (defgroup platformio nil
@@ -233,6 +234,10 @@
   (interactive)
   (platformio--exec "init --ide emacs"))
 
+(defun platformio-generate-compiledb ()
+  "Generate `compile_commands.json' for current project."
+  (interactive)
+  (platformio--exec "run --target compiledb"))
 
 (defun platformio-device-monitor ()
   "Open device monitor."
