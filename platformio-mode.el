@@ -7,7 +7,7 @@
 ;;         Dante Catalfamo <dante@lambda.cx>
 ;; URL: https://github.com/zachmassia/platformio-mode
 ;; Version: 0.3.1
-;; Package-Requires: ((emacs "25.1") (async "1.9.0"))
+;; Package-Requires: ((emacs "25.1"))
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -34,7 +34,6 @@
 ;;; Code:
 
 (require 'json)
-(require 'async)
 (require 'seq)
 (require 'compile)
 (require 'project)
